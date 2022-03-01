@@ -5,7 +5,9 @@
 using namespace std;
 
 /***********************FUNCTION DEFINITIONS***********************/
-int play(string userChoice = "", string judgeChoice = "Rock") {
+int play() {
+    string userChoice = "";
+    string judgeChoice = "Rock";
     static int rounds = 1;
     cout << "What do you choose?" << endl << endl;
     cin >> userChoice;
@@ -24,35 +26,45 @@ int play(string userChoice = "", string judgeChoice = "Rock") {
         }
     }
     if (judgeChoice == "Rock"){
-        if (userChoice == "Rock")
+        if (userChoice == "Rock"){
+            rounds++;
             return -1;
+        }
         else if (userChoice == "Scissors"){
+            rounds++;
             return 0;
         }
         else if (userChoice == "Paper"){
+            rounds++;
             return 1;
         }
     }
     else if (judgeChoice == "Paper"){
-        if (userChoice == "Rock")
+        if (userChoice == "Rock"){
+            rounds++;
             return 0;
+        }
         else if (userChoice == "Scissors"){
+            rounds++;
             return 1;
         }
         else if (userChoice == "Paper"){
+            rounds++;
             return -1;
         }        
     }
     else if (judgeChoice == "Scissors"){
-        if (userChoice == "Rock")
+        if (userChoice == "Rock"){
+            rounds++;
             return 1;
+        }
         else if (userChoice == "Scissors"){
+            rounds++;
             return -1;
         }
         else if (userChoice == "Paper"){
+            rounds++;
             return 0;
         }
     }
-    rounds++;
-
 }

@@ -6,7 +6,6 @@
 // Purpose: This program includes a fierce battle of rock paper scissors.
 
 #include "judge.h"
-
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
