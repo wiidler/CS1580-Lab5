@@ -7,7 +7,7 @@ using namespace std;
 /***********************FUNCTION DEFINITIONS***********************/
 int play(string userChoice, string judgeChoice) {
     static int rounds = 1;
-    cout << "What do you choose?" << endl << endl;
+    cout << "What do you choose?" << endl;
     cin >> userChoice;
     if (rounds == 1){
         int choice = (rand() % 3) + 1;
