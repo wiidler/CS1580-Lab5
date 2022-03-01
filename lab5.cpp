@@ -17,7 +17,7 @@ int main(){
     while (userWins < 2 && judgeWins < 2){ // loop continues until one player gets 2 wins
         int game = play();
         if (game == -1){ // "-1" = draw
-            cout << "Your hands clash but end up gaining no ground." << endl "It's a draw this round!" << endl << endl;
+            cout << "Your hands clash but end up gaining no ground." << endl << "It's a draw this round!" << endl << endl;
             cout << "Current standings:" << endl << "You - " << userWins << endl << "The Judge - " << judgeWins << endl << endl; 
         }
         else if (game == 0){ // "0" = loss for user
