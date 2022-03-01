@@ -27,7 +27,7 @@ int main(){
         }
         else if (game == 1){ // "1" = win for user
             userWins++;
-            cout << "You muster all of your strength and take a step toward the judge, sending him flying." << endl << "You win this round!" << endl;
+            cout << "You muster all of your strength and take a step toward the judge, sending him flying." << endl << "You win this round!" << endl << endl;
             cout << "Current standings:" << endl << "You - " << userWins << endl << "The Judge - " << judgeWins << endl << endl;
         }
     }
