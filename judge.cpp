@@ -67,4 +67,5 @@ int play(string userChoice, string judgeChoice) {
             return 0;
         }
     }
+    return 69;
 }
