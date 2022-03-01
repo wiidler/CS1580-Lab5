@@ -10,6 +10,6 @@ using namespace std;
 // Description: 
 // Pre: 
 // Post:
-int play();
+int play(string userChoice = "", string judgeChoice = "Rock");
 
 #endif

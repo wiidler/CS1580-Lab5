@@ -5,7 +5,7 @@
 using namespace std;
 
 /***********************FUNCTION DEFINITIONS***********************/
-int play() {
+int play(string userChoice, string judgeChoice) {
     string userChoice = "";
     string judgeChoice = "Rock";
     static int rounds = 1;
